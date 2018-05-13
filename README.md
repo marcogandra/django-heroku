@@ -28,6 +28,8 @@ Minimal configuration to host a Django project at Heroku
 *pyc
 ```
 * git add .
+* git config --global user.email "marco.gandra@outlook.com"
+* git config --global user.name "Gandra"
 * git commit -m 'First commit'
 
 ## Hidding instance configuration
