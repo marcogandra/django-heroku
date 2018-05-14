@@ -102,6 +102,8 @@ Remember to grab the address of the app in this point
 ## Publishing the app
 * git add .
 * git commit -m "Configuring the app"
+disable the collectstatic during a deploy
+* heroku config:set DISABLE_COLLECTSTATIC=1
 * git push heroku master --force
 
 ## Creating the data base
@@ -111,8 +113,17 @@ Remember to grab the address of the app in this point
 * heroku run python3 manage.py createsuperuser
 
 ## EXTRAS
-### You may need to disable the collectstatic
-* heroku config:set DISABLE_COLLECTSTATIC=1
+run collectstatic using bower
+
+* heroku run 'bower install --config.interactive=false;grunt prep;python manage.py collectstatic --noinput'
+
+enable collecstatic for future deploys
+
+* heroku config:unset DISABLE_COLLECTSTATIC
+
+try it on your own (optional)
+
+* heroku run python manage.py collectstatic
 
 ### Changing a specific configuration
 * heroku config:set DEBUG=True
