@@ -126,4 +126,4 @@ try it on your own (optional)
 * heroku run python manage.py collectstatic
 
 ### Changing a specific configuration
-* heroku config:set DEBUG=True
+* heroku config:set DEBUG=False
