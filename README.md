@@ -26,6 +26,7 @@ Minimal configuration to host a Django project at Heroku
 # Name of your virtuan env
 .vEnv
 *pyc
+.env
 ```
 * git add .
 * git config --global user.email "marco.gandra@outlook.com"
