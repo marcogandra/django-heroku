@@ -31,7 +31,7 @@ Minimal configuration to host a Django project at Heroku
 * git add .
 * git config --global user.email "seu-email@provedor.com"
 * git config --global user.name "Usuario-git"
-* git commit -m 'First commit'
+* git commit -m "First commit"
 
 ## Hidding instance configuration
 * pip install python-decouple
@@ -101,7 +101,7 @@ Remember to grab the address of the app in this point
 
 ## Publishing the app
 * git add .
-* git commit -m 'Configuring the app'
+* git commit -m "Configuring the app"
 * git push heroku master --force
 
 ## Creating the data base
